@@ -49,4 +49,3 @@ jobs:
   deploy:
       uses: ./.github/workflows/deploy.yaml
       needs: validate 
-    
