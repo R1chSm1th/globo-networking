@@ -1,5 +1,8 @@
-name: hello-worldAdd commentMore actions
-on: push
+name: hello-world validate
+
+on:
+  workflow_call: # This makes the workflow reusable
+
 jobs:
   my-job:
     runs-on: ubuntu-latest
