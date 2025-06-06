@@ -42,10 +42,5 @@ jobs:
       id: validate
       if: (success() || failure())
       run: terraform validate
-      
-  validate:
-      uses: ./.github/workflows/validate.yaml
 
-  deploy:
-      uses: ./.github/workflows/deploy.yaml
-      needs: validate 
+    
